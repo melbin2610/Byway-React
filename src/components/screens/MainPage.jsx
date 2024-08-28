@@ -6,6 +6,8 @@ import TopCategories from './TopCategories'
 import TopCourses from './TopCourses'
 import TopInstructors from './TopInstructors'
 import AboutUs from './AboutUs'
+import Journy from './Journy'
+import Footer from '../includes/Footer'
 
 function MainPage() {
   return (
@@ -17,6 +19,8 @@ function MainPage() {
     <TopCourses/>
     <TopInstructors/>
     <AboutUs/>
+    <Journy/>
+    <Footer/>
     </>
   )
 }
