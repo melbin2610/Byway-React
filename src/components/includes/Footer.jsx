@@ -188,6 +188,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
+  cursor: pointer;
   margin-bottom: 10px;
 `;
 

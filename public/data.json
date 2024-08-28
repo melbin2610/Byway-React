@@ -1,0 +1,51 @@
+{
+    "status": [
+      {
+        "id": 1,
+        "count": 250,
+        "info": "Courses by our best mentors"
+      },
+      {
+        "id": 2,
+        "count": 1000,
+        "info": "Courses by our best mentors"
+      },
+      {
+        "id": 3,
+        "count": 15,
+        "info": "Courses by our best mentors"
+      },
+      {
+        "id": 4,
+        "count": 2400,
+        "info": "Courses by our best mentors"
+      }
+    ],
+    "topCategories": [
+    {
+      "id": 1,
+      "icon": "/assets/icons/astrology.svg",
+      "categoryName": "Astrology",
+      "coursesIncluded": 11
+    },
+    {
+      "id": 2,
+      "icon": "/assets/icons/devlopment.svg",
+      "categoryName": "Development",
+      "coursesIncluded": 12
+    },
+    {
+      "id": 3,
+      "icon": "/assets/icons/marketing.svg",
+      "categoryName": "Marketing",
+      "coursesIncluded": 12
+    },
+    {
+      "id": 4,
+      "icon": "/assets/icons/physics.svg",
+      "categoryName": "Physics",
+      "coursesIncluded": 14
+    }
+  ]
+      
+}    

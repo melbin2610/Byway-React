@@ -7,7 +7,7 @@ function Journy() {
         <Container>
         <TopSection>
           <LeftImage>
-            <Image src={require("../../assets/images/model-4.jpg")} alt="#" />
+            <Image src={require("../../assets/images/model-4.jpg")} alt="model-4" />
           </LeftImage>
           <RightContent>
             <Title>Become an Instructor</Title>
@@ -44,7 +44,7 @@ function Journy() {
             </LinkButton>
           </LeftContent>
           <RightImage>
-            <Image src={require("../../assets/images/model-6.jpg")} alt="#" />
+            <Image src={require("../../assets/images/model-6.jpg")} alt="model-6" />
           </RightImage>
         </BottomSection>
       </Container>
@@ -76,6 +76,7 @@ const RightContent = styled.div`
 const Title = styled.h4`
   font-size: 20px;
   font-weight: 600;
+  color: #000000;
   line-height: 30px;
   text-align: left;
   margin: 0;
@@ -83,6 +84,7 @@ const Title = styled.h4`
 
 const Paragraph = styled.p`
   font-size: 16px;
+  color: #1D2939;
   font-weight: 400;
   line-height: 25.6px;
   text-align: left;

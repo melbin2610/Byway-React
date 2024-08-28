@@ -1,76 +1,85 @@
-import React from 'react'
+import React from "react";
 import styled from 'styled-components'
 
-function Status() {
-  return (
-    <StatusContainer>
-        <Wrapper>
-            <StatusMain>
-            <StatusContent>
-            <StatusCount>250+</StatusCount>
-            <StatusMentor>Courses by our best mentors </StatusMentor>
-            </StatusContent>
-            <VerticalLine></VerticalLine>
-            <StatusContent>
-            <StatusCount>1000+</StatusCount>
-            <StatusMentor>Courses by our best mentors</StatusMentor>
-            </StatusContent>
-            <VerticalLine></VerticalLine>
-            <StatusContent>
-            <StatusCount>15+</StatusCount>
-            <StatusMentor>Courses by our best mentors</StatusMentor>
-            </StatusContent>
-            <VerticalLine></VerticalLine>
-            <StatusContent>
-            <StatusCount>2400+</StatusCount>
-            <StatusMentor>Courses by our best mentors</StatusMentor>
-            </StatusContent>
-            </StatusMain>
-            
 
+import { useEffect, useState } from "react";
+
+function Status() {
+  const [status, setStatus] = useState([]);
+  useEffect(() => {
+    fetch("/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setStatus(data.status);
+      })
+      .catch((error) => console.log("Error fetching data:", error));
+  }, []);
+  return (
+    <>
+      <StatusContainer>
+        <Wrapper>
+          <Items>
+            {status.map((item) => (
+              <Item key={item.id}>
+                <Number>{item.count}+</Number>
+                <Info>{item.info}</Info>
+              </Item>
+            ))}
+          </Items>
         </Wrapper>
-    </StatusContainer>
-  )
+      </StatusContainer>
+    </>
+  );
 }
 const StatusContainer = styled.div`
-    margin-top: 60px;
-    background-color:#F8FAFC;
-    `;
+  background: #f8fafc;
+`;
+
 const Wrapper = styled.div`
-      width: 90%;
-      max-width: 1280px;
-      margin-inline:  auto;
-      `;
-      
-const StatusCount = styled.span`
-    font-size:32px;
-    color: #0F172A;
-    font-weight:600;
-    line-height:41.6px;`
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0px;
+  max-width: 1280px;
+`;
 
-const StatusMentor = styled.span`
-    font-size:14px;
-    color:#0F172A;
-    font-weight:400;
-    line-height:21px;`
-    
-const StatusMain = styled.div`
-    display: flex;
-`    
+const Items = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-const StatusContent = styled.div`
-    align-items: center;
-    gap: 6px;
-    padding:40px 71px;
-    display: flex;
-    flex-direction: column;`
+const Item = styled.div`
+  text-align: center;
+  position: relative;
 
-const VerticalLine = styled.div`
-    margin-top: 80px;
-    rotate: -90deg;
+  &:not(:last-child)::after {
+    content: "";
     width: 55px;
-    height: 0;
-    border: 4px solid #E2E8F0;
-`
+    height: 0; /* Adjust as needed */
+    border-bottom: 4px solid #e2e8f0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(204%) rotate(-90deg);
+  }
+`;
 
-export default Status
+const Number = styled.h3`
+  margin-bottom: 8px;
+  color: #0f172a;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.6px;
+`;
+
+const Info = styled.p`
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+`;
+
+export default Status;
