@@ -1,27 +1,27 @@
 {
-    "status": [
-      {
-        "id": 1,
-        "count": 250,
-        "info": "Courses by our best mentors"
-      },
-      {
-        "id": 2,
-        "count": 1000,
-        "info": "Courses by our best mentors"
-      },
-      {
-        "id": 3,
-        "count": 15,
-        "info": "Courses by our best mentors"
-      },
-      {
-        "id": 4,
-        "count": 2400,
-        "info": "Courses by our best mentors"
-      }
-    ],
-    "topCategories": [
+  "status": [
+    {
+      "id": 1,
+      "count": 250,
+      "info": "Courses by our best mentors"
+    },
+    {
+      "id": 2,
+      "count": 1000,
+      "info": "Courses by our best mentors"
+    },
+    {
+      "id": 3,
+      "count": 15,
+      "info": "Courses by our best mentors"
+    },
+    {
+      "id": 4,
+      "count": 2400,
+      "info": "Courses by our best mentors"
+    }
+  ],
+  "topCategories": [
     {
       "id": 1,
       "icon": "/assets/icons/astrology.svg",
@@ -46,6 +46,361 @@
       "categoryName": "Physics",
       "coursesIncluded": 14
     }
+  ],
+
+  "topCourses": [
+    {
+      "id": 1,
+      "image": "/assets/images/bg.jpg",
+      "subject": "Beginner’s Guide to Design",
+      "description": "This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.",
+      "certification": "Certified User Experience Designer",
+      "oldRate": 149.99,
+      "offerRate": 79.99,
+      "offer": 50,
+      "instructor": "By Ronald Richards",
+      "instructorImage": "/assets/icons/span-8.svg",
+      "instructorProfession": "UI/UX Designer",
+      "aboutInstructor": "With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences.",
+      "rating": 4.6,
+      "ratingCounts": 651651,
+      "duration": "22 Total Hours. 155 Lectures. Beginner",
+      "category": "Development",
+      "language": "English, Spanish, Italian, German",
+      "reviews": 40445,
+      "leanersTotalReviews": "146,951",
+      "students": 500,
+      "courses": 15,
+      "syllabus": [
+        {
+          "title": "Introduction to UX Design",
+          "lessons": 5,
+          "duration": "1 hour"
+        },
+        {
+          "title": "Basics of User-Centered Design",
+          "lessons": 6,
+          "duration": "1.5 hours"
+        },
+        {
+          "title": "Elements of User Experience",
+          "lessons": 4,
+          "duration": "1 hour"
+        },
+        {
+          "title": "Visual Design Principles",
+          "lessons": 7,
+          "duration": "2 hours"
+        }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "/assets/images/digital-marketing.jpg",
+      "subject": "Digital Marketing Masterclass",
+      "description": "Master digital marketing strategies and grow your online presence.",
+      "certification": "Certified Digital Marketer",
+      "oldRate": 149.99,
+      "offerRate": 79.99,
+      "offer": 50,
+      "instructor": "Jane Smith",
+      "instructorImage": "/assets/icons/span-2.svg",
+      "instructorProfession": "Digital Marketer",
+      "aboutInstructor": "With a deep understanding of digital marketing trends, Jane has helped numerous brands enhance their online presence. Her expertise in SEO, social media, and content marketing has driven successful campaigns for top global companies.",
+      "rating": 4.6,
+      "ratingCounts": 950,
+      "duration": "60 Total Hours. 150 Lectures. Beginner",
+      "category": "Marketing",
+      "language": "English, Spanish, Italian, German",
+      "reviews": 50000,
+      "leanersTotalReviews": "146,951",
+      "students": 200,
+      "courses": 20,
+      "syllabus": [
+        {
+          "title": "Introduction to Digital Marketing",
+          "lessons": 4,
+          "duration": "1 hour"
+        },
+        { "title": "SEO Fundamentals", "lessons": 6, "duration": "2 hours" },
+        {
+          "title": "Social Media Marketing Strategies",
+          "lessons": 5,
+          "duration": "1.5 hours"
+        },
+        {
+          "title": "Content Marketing and Blogging",
+          "lessons": 7,
+          "duration": "2 hours"
+        },
+        {
+          "title": "Email Marketing Best Practices",
+          "lessons": 3,
+          "duration": "1 hour"
+        }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "/assets/images/graphic-designer.jpg",
+      "subject": "Graphic Design for Beginners",
+      "description": "An introductory course to graphic design using popular tools.",
+      "certification": "Certified Graphic Designer",
+      "oldRate": 99.99,
+      "offerRate": 49.99,
+      "offer": 50,
+      "instructor": "Emily Johnson",
+      "instructorImage": "/assets/icons/span-3.svg",
+      "instructorProfession": "Graphic Designer",
+      "aboutInstructor": "Emily is a seasoned graphic designer with a passion for creative visual communication. She has worked with leading design studios, crafting visually appealing designs that resonate with audiences across various industries.",
+      "rating": 4.6,
+      "ratingCounts": 800,
+      "duration": "40 Total Hours. 100 Lectures. Intermediate",
+      "category": "Design",
+      "language": "English, Spanish, Italian, German",
+      "reviews": 45000,
+      "leanersTotalReviews": "146,951",
+      "students": 300,
+      "courses": 18,
+      "syllabus": [
+        {
+          "title": "Introduction to Graphic Design",
+          "lessons": 4,
+          "duration": "1 hour"
+        },
+        {
+          "title": "Design Principles and Elements",
+          "lessons": 6,
+          "duration": "1.5 hours"
+        },
+        {
+          "title": "Typography and Color Theory",
+          "lessons": 5,
+          "duration": "1 hour"
+        },
+        {
+          "title": "Working with Design Software",
+          "lessons": 7,
+          "duration": "2 hours"
+        },
+        {
+          "title": "Creating Digital Artwork",
+          "lessons": 3,
+          "duration": "1 hour"
+        }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "/assets/images/python.jpg",
+      "subject": "Python Programming Essentials",
+      "description": "Learn Python programming with practical examples and exercises.",
+      "certification": "Certified Python Programmer",
+      "oldRate": 129.99,
+      "offerRate": 69.99,
+      "offer": 50,
+      "instructor": "Michael Brown",
+      "instructorImage": "/assets/icons/span-4.svg",
+      "instructorProfession": "Python Developer",
+      "aboutInstructor": "Michael is a highly skilled Python developer with extensive experience in software development. He has contributed to several open-source projects and has a knack for simplifying complex programming concepts for beginners.",
+      "rating": 4.6,
+      "ratingCounts": 1800,
+      "duration": "30 Total Hours. 75 Lectures. Beginner",
+      "category": "Programming",
+      "language": "English, Spanish, Italian, German",
+      "reviews": 48000,
+      "leanersTotalReviews": "146,951",
+      "students": 600,
+      "courses": 10,
+      "syllabus": [
+        {
+          "title": "Introduction to Python Programming",
+          "lessons": 4,
+          "duration": "1 hour"
+        },
+        {
+          "title": "Python Basics: Variables, Data Types, and Control Structures",
+          "lessons": 6,
+          "duration": "1.5 hours"
+        },
+        {
+          "title": "Working with Functions and Modules",
+          "lessons": 5,
+          "duration": "1 hour"
+        },
+        {
+          "title": "Object-Oriented Programming in Python",
+          "lessons": 7,
+          "duration": "2 hours"
+        },
+        {
+          "title": "Advanced Python Topics",
+          "lessons": 3,
+          "duration": "1 hour"
+        }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
+      ]
+    }
+  ],
+  "topInstructors": [
+    {
+      "id": 1,
+      "image": "/assets/images/model-5.jpg",
+      "name": "Ronald Richards",
+      "proffesion": "UI/UX Designer",
+      "rating": 4.9,
+      "icon": "/assets/icons/star.svg",
+      "subscription": 2400
+    },
+    {
+      "id": 2,
+      "image": "/assets/images/model-5.jpg",
+      "name": "Ronald Richards",
+      "proffesion": "UI/UX Designer",
+      "rating": 4.9,
+      "icon": "/assets/icons/star.svg",
+      "subscription": 2400
+    },
+    {
+      "id": 3,
+      "image": "/assets/images/model-5.jpg",
+      "name": "Ronald Richards",
+      "proffesion": "UI/UX Designer",
+      "rating": 4.9,
+      "icon": "/assets/icons/star.svg",
+      "subscription": 2400
+    },
+    {
+      "id": 4,
+      "image": "/assets/images/model-5.jpg",
+      "name": "Ronald Richards",
+      "proffesion": "UI/UX Designer",
+      "rating": 4.9,
+      "icon": "/assets/icons/star.svg",
+      "subscription": 2400
+    },
+    {
+      "id": 5,
+      "image": "/assets/images/model-5.jpg",
+      "name": "Ronald Richards",
+      "proffesion": "UI/UX Designer",
+      "rating": 4.9,
+      "icon": "/assets/icons/star.svg",
+      "subscription": 2400
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "description": "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.",
+      "userImage": "/assets/icons/span-7.svg",
+      "userName": "Jane Doe",
+      "userProfession": "Designer"
+    },
+    {
+      "id": 2,
+      "description": "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.",
+      "userImage": "/assets/icons/span-7.svg",
+      "userName": "Jane Doe",
+      "userProfession": "Designer"
+    },
+    {
+      "id": 3,
+      "description": "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.",
+      "userImage": "/assets/icons/span-7.svg",
+      "userName": "Jane Doe",
+      "userProfession": "Designer"
+    }
   ]
-      
-}    
+}

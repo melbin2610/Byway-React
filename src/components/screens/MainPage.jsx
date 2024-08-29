@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import Header from '../includes/Header'
 import HomeOne from './HomeOne'
 import Status from './Status'
@@ -9,7 +9,11 @@ import AboutUs from './AboutUs'
 import Journy from './Journy'
 import Footer from '../includes/Footer'
 
+
 function MainPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <Header/>

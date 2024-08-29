@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import image from "../../assets/svg/astrology.svg";
+import image2 from "../../assets/svg/devlopment.svg";
+import image3 from "../../assets/svg/marketing.svg";
+import image4 from "../../assets/svg/physics.svg";
 
 function TopCategories() {
   return (
@@ -26,33 +29,33 @@ function TopCategories() {
             <CategorieCard>
               <BlueBlock>
                 <ImgContainer>
-                  <BlueBlockImg src={image} alt="astrology" />
+                  <BlueBlockImg src={image2} alt="astrology" />
                 </ImgContainer>
               </BlueBlock>
-              <Heading>Astrology</Heading>
-              <Paragraph>11 Courses</Paragraph>
+              <Heading>Development</Heading>
+              <Paragraph>12 Courses</Paragraph>
             </CategorieCard>
           </ItemsContainer>
           <ItemsContainer>
             <CategorieCard>
               <BlueBlock>
                 <ImgContainer>
-                  <BlueBlockImg src={image} alt="astrology" />
+                  <BlueBlockImg src={image3} alt="marketing" />
                 </ImgContainer>
               </BlueBlock>
               <Heading>Astrology</Heading>
-              <Paragraph>11 Courses</Paragraph>
+              <Paragraph>12 Courses</Paragraph>
             </CategorieCard>
           </ItemsContainer>
           <ItemsContainer>
             <CategorieCard>
               <BlueBlock>
                 <ImgContainer>
-                  <BlueBlockImg src={image} alt="astrology" />
+                  <BlueBlockImg src={image4} alt="physics" />
                 </ImgContainer>
               </BlueBlock>
               <Heading>Astrology</Heading>
-              <Paragraph>11 Courses</Paragraph>
+              <Paragraph>14 Courses</Paragraph>
             </CategorieCard>
           </ItemsContainer>
         </ItemsMainContainer>
