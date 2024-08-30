@@ -41,9 +41,7 @@ function CourseDescription() {
   )
 }
 const Container = styled.div`
-  // width: 90%;
-  // margin: 0 auto;
-  // max-width: 1280px;
+
 `;
 
 const TextWrapper = styled.div`

@@ -196,7 +196,9 @@ const Ul = styled.ul`
   gap: 25px;
 `;
 
-const List = styled.li``;
+const List = styled.li`
+display:flex;
+align-items:center`;
 
 const Navlink = styled.div`
   text-decoration: none;
@@ -418,7 +420,7 @@ const IconLink = styled.a`
   display: inline-block;
   width: 25px;
   height: 25px;
-  padding: 8px;
+  padding: 3%;
   border-radius: 50%;
   border: 4px solid rgba(226, 232, 240, 0.5);
 `;

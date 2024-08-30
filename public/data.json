@@ -51,8 +51,8 @@
   "topCourses": [
     {
       "id": 1,
-      "image": "/assets/images/bg.jpg",
-      "subject": "Beginner’s Guide to Design",
+      "image": "/assets/images/img.jpg",
+      "subject": "Introduction to User Experience Design",
       "description": "This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.",
       "certification": "Certified User Experience Designer",
       "oldRate": 149.99,
@@ -119,8 +119,8 @@
     },
     {
       "id": 2,
-      "image": "/assets/images/digital-marketing.jpg",
-      "subject": "Digital Marketing Masterclass",
+      "image": "/assets/images/bg.jpg",
+      "subject": "Beginner’s Guide to Design",
       "description": "Master digital marketing strategies and grow your online presence.",
       "certification": "Certified Digital Marketer",
       "oldRate": 149.99,
