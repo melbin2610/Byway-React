@@ -1,214 +1,212 @@
-import React from 'react';
-import styled from 'styled-components';
-import arroL from '../../assets/svg/short-arrow-left.svg';
-import arroR from '../../assets/svg/short-arrow-right.svg';
-import quotes from '../../assets/svg/quotes.svg';
-import user from '../../assets/images/Ellipse 61.png';
+import React, { useRef, useEffect, useState } from "react";
+import Slider from "react-slick";
+import styled from "styled-components";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function AboutUs() {
-  const reviews = [
-    {
-      quote: "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.",
-      name: "Jane Doe",
-      job: "Designer",
-    },
-    {
-      quote: "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.",
-      name: "Jane Doe",
-      job: "Designer",
-    },
-    {
-      quote: "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.",
-      name: "Jane Doe",
-      job: "Designer",
-    },
-  ];
+  const [testimonials, setTestimonials] = useState([]);
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setTestimonials(data.testimonials);
+      })
+      .catch((error) => console.log("Error fetching data:", error));
+  }, []);
+
+  const settings1 = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
 
   return (
-    <AboutUsContainer>
-      <Wrapper>
-        <MainContainer>
-          <HeaderContent>
-            <Heading>What Our Customer Say<br/>About Us</Heading>
-            <SliderButton>
-              <SliderLeft>
-                <ArrowContainer>
-                  <ArrowImg src={arroL} alt="arrow"/>
-                </ArrowContainer>
-              </SliderLeft>
-              <SliderRight>
-                <ArrowContainer>
-                  <ArrowImg src={arroR} alt="arrow"/>
-                </ArrowContainer>
-              </SliderRight>
-            </SliderButton>
-          </HeaderContent>
-          <DataMainContainer>
-            {reviews.map((review, index) => (
-              <DataContainer key={index}>
-                <CardContainer>
-                  <QuotesImgContainer>
-                    <QuotesImg src={quotes} alt="quotes"/>
-                  </QuotesImgContainer>
-                  <Paragraph>{review.quote}</Paragraph>
-                  <CustomerReview>
-                    <ReviewImgContainer>
-                      <ReviewImg src={user} alt="user"/>
-                    </ReviewImgContainer>
-                    <UserDetails>
-                      <UserName>{review.name}</UserName>
-                      <UserJob>{review.job}</UserJob>
-                    </UserDetails>
-                  </CustomerReview>
-                </CardContainer>
-              </DataContainer>
+    <>
+      <Background>
+        <Container>
+          <HeadingWrapper>
+            <Heading>What Our Customer Say About Us</Heading>
+            <ButtonContainer>
+              <PrevButton onClick={() => sliderRef.current.slickPrev()}>
+                <ButtonIcon
+                  src={
+                    require("../../assets/icons/short-arrow-left.svg").default
+                  }
+                  alt="Arrow-left"
+                />
+              </PrevButton>
+              <NextButton onClick={() => sliderRef.current.slickNext()}>
+                <ButtonIcon
+                  src={
+                    require("../../assets/icons/short-arrow-right.svg").default
+                  }
+                  alt="Arrow-right"
+                />
+              </NextButton>
+            </ButtonContainer>
+          </HeadingWrapper>
+        
+          <Slider ref={sliderRef} {...settings1}>
+            {testimonials.map((testimonial) => (
+              <Card key={testimonial.id}>
+                <QuoteIcon>
+                  <Icon
+                    src={require("../../assets/icons/quotes.svg").default}
+                    alt="quote-icon"
+                  />
+                </QuoteIcon>
+                <Paragraph>"{testimonial.description}"</Paragraph>
+                <UserWrapper>
+                  <UserImage>
+                    <Image
+                      src={testimonial.userImage}
+                      alt={testimonial.userName}
+                    />
+                  </UserImage>
+                  <UserProfile>
+                    <Name>{testimonial.userName}</Name>
+                    <Profession>{testimonial.userProfession}</Profession>
+                  </UserProfile>
+                </UserWrapper>
+              </Card>
             ))}
-          </DataMainContainer>
-        </MainContainer>
-      </Wrapper>
-    </AboutUsContainer>
+          </Slider>
+        </Container>
+      </Background>
+    </>
   );
 }
 
-const Wrapper = styled.div`
-  width: 90%;
-  max-width: 1280px;
-  margin-inline: auto;
+const Background = styled.div`
+  margin-top: 62px;
+  padding: 70px 0 60px;
+  background: #f8fafc;
 `;
 
-const AboutUsContainer = styled.div`
-  margin-top: 64px;
-  background-color: #F8FAFC;
+const Container = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+`;
+
+const HeadingWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 `;
 
 const Heading = styled.h3`
+  width: 308px;
+  color: #000;
   font-family: Inter;
   font-size: 24px;
   font-weight: 600;
   line-height: 33.6px;
-  color: black;
   text-align: left;
 `;
 
-const MainContainer = styled.div`
-  padding: 80px 0;
-`;
-
-const SliderButton = styled.div`
+const ButtonContainer = styled.div`
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 20px;
 `;
 
-const HeaderContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const SliderLeft = styled.button`
-  cursor: pointer;
+const PrevButton = styled.button`
+  background: #94a3b8;
   width: 56px;
   height: 40px;
-  padding: 10px 16px 10px 22px;
-  gap: 6px;
+  padding: 10px 16px;
   border-radius: 8px;
-  background: #94A3B8;
   border: none;
+  cursor: pointer;
 `;
 
-const SliderRight = styled.button`
-  cursor: pointer;
+const NextButton = styled.button`
+  background: #94a3b8;
   width: 56px;
   height: 40px;
-  padding: 10px 16px 10px 22px;
-  background-color: #94A3B8;
+  padding: 10px 16px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 `;
 
-const ArrowContainer = styled.div`
-  width: 30%;
-`;
+const ButtonIcon = styled.img``;
 
-const ArrowImg = styled.img`
-  width: 100%;
-  display: block;
-`;
-
-const DataMainContainer = styled.div`
-  margin-top: 22px;
-  display: flex;
-  gap: 24px; /* Added gap between cards */
-  flex-wrap: wrap; /* Ensure that cards wrap to the next line if necessary */
-  justify-content: space-between;
-`;
-
-const DataContainer = styled.div`
-  flex: 1 1 300px; /* Allow cards to be responsive with a minimum width */
-`;
-
-const CardContainer = styled.div`
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #FFFFFF;
-  gap: 8px;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0px 0px 8px 0px #3B82F61F;
+const Card = styled.div`
+  background-color: #FFFFFF;
+  width: 96% !important;
+  box-sizing: border-box;
+  padding: 24px ;
   border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 0px 8px 0px #3b82f61f;
+ 
 `;
 
-const QuotesImgContainer = styled.div`
-  width: 48px;
-  height: 48px;
-`;
+const QuoteIcon = styled.span``;
 
-const QuotesImg = styled.img`
-  width: 100%;
-  display: block;
-`;
+const Icon = styled.img``;
 
 const Paragraph = styled.p`
-  color: #000000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 25.6px;
   text-align: left;
+  color: #000000;
+  margin: 10px 0 8px;
 `;
 
-const CustomerReview = styled.div`
-  display: flex;
-  width: 150px;
-  height: 60px;
-  gap: 8px;
+const UserWrapper = styled.div`
+  display: inline-flex;
+  align-items: center;
 `;
 
-const ReviewImgContainer = styled.div`
+const UserImage = styled.span`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
+  border-radius: 50%;
+  background: #94a3b8;
+  overflow: hidden;
 `;
 
-const ReviewImg = styled.img`
+const Image = styled.img`
   display: block;
+  height: 100%;
+  object-fit: cover;
   width: 100%;
 `;
 
-const UserDetails = styled.div``;
-
-const UserName = styled.h5`
-  font-size: 18px;
-  font-weight: 600;
-  color: #000000;
-  line-height: 28.8px;
-  text-align: left;
+const UserProfile = styled.span`
+  margin-left: 6px;
 `;
 
-const UserJob = styled.span`
-  color: #334155;
+const Name = styled.h5`
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  color: #000000;
+`;
+
+const Profession = styled.p`
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
 `;
+const MainCard = styled.div`
+ 
+`
+
 
 export default AboutUs;

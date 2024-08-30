@@ -80,6 +80,7 @@ const Info = styled.p`
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  color:#0F172A; 
 `;
 
 export default Status;

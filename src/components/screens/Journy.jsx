@@ -92,6 +92,7 @@ const Paragraph = styled.p`
 `;
 
 const LinkButton = styled.button`
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 10px;

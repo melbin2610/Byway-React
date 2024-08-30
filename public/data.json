@@ -124,7 +124,7 @@
       "description": "Master digital marketing strategies and grow your online presence.",
       "certification": "Certified Digital Marketer",
       "oldRate": 149.99,
-      "offerRate": 79.99,
+      "offerRate": 38.55,
       "offer": 50,
       "instructor": "Jane Smith",
       "instructorImage": "/assets/icons/span-2.svg",
@@ -188,49 +188,49 @@
     },
     {
       "id": 3,
-      "image": "/assets/images/graphic-designer.jpg",
-      "subject": "Graphic Design for Beginners",
-      "description": "An introductory course to graphic design using popular tools.",
-      "certification": "Certified Graphic Designer",
+      "image": "/assets/images/online.jpg",
+      "subject": "Online digital marketing",
+      "description": "An introductory course to degital marketting using popular tools.",
+      "certification": "Certified Digital Marketer",
       "oldRate": 99.99,
-      "offerRate": 49.99,
+      "offerRate": 89.99,
       "offer": 50,
-      "instructor": "Emily Johnson",
+      "instructor": "Lorrie Thomas",
       "instructorImage": "/assets/icons/span-3.svg",
-      "instructorProfession": "Graphic Designer",
-      "aboutInstructor": "Emily is a seasoned graphic designer with a passion for creative visual communication. She has worked with leading design studios, crafting visually appealing designs that resonate with audiences across various industries.",
+      "instructorProfession": "Digital Marketer",
+      "aboutInstructor": "Lorrie Thomas is a seasoned digital markter with a passion for creative visual communication. He has worked with leading digital marketing company.",
       "rating": 4.6,
       "ratingCounts": 800,
-      "duration": "40 Total Hours. 100 Lectures. Intermediate",
+      "duration": "30 Total Hours. 65 Lectures. Intermediate",
       "category": "Design",
       "language": "English, Spanish, Italian, German",
       "reviews": 45000,
-      "leanersTotalReviews": "146,951",
+      "leanersTotalReviews": "186,851",
       "students": 300,
       "courses": 18,
       "syllabus": [
         {
-          "title": "Introduction to Graphic Design",
+          "title": "Introduction to Digital Marketing",
           "lessons": 4,
           "duration": "1 hour"
         },
         {
-          "title": "Design Principles and Elements",
+          "title": "Marketing Principles and Elements",
           "lessons": 6,
-          "duration": "1.5 hours"
+          "duration": "3.5 hours"
         },
         {
-          "title": "Typography and Color Theory",
+          "title": "How to impress customers",
           "lessons": 5,
           "duration": "1 hour"
         },
         {
-          "title": "Working with Design Software",
+          "title": "Working with marketing Software",
           "lessons": 7,
           "duration": "2 hours"
         },
         {
-          "title": "Creating Digital Artwork",
+          "title": "Creating marketing Artwork",
           "lessons": 3,
           "duration": "1 hour"
         }
@@ -261,20 +261,20 @@
     },
     {
       "id": 4,
-      "image": "/assets/images/python.jpg",
-      "subject": "Python Programming Essentials",
-      "description": "Learn Python programming with practical examples and exercises.",
-      "certification": "Certified Python Programmer",
+      "image": "/assets/images/123.jpg",
+      "subject": "Golang Programming Essentials",
+      "description": "Learn golang programming with practical examples and exercises.",
+      "certification": "Certified golang Programmer",
       "oldRate": 129.99,
       "offerRate": 69.99,
       "offer": 50,
-      "instructor": "Michael Brown",
+      "instructor": "Sumit bansal",
       "instructorImage": "/assets/icons/span-4.svg",
-      "instructorProfession": "Python Developer",
-      "aboutInstructor": "Michael is a highly skilled Python developer with extensive experience in software development. He has contributed to several open-source projects and has a knack for simplifying complex programming concepts for beginners.",
+      "instructorProfession": "golang Developer",
+      "aboutInstructor": "Sumit bansal  is a highly skilled Python developer with extensive experience in software development. He has contributed to several open-source projects and has a knack for simplifying complex programming concepts for beginners.",
       "rating": 4.6,
       "ratingCounts": 1800,
-      "duration": "30 Total Hours. 75 Lectures. Beginner",
+      "duration": "10 Total Hours. 45 Lectures. Beginner",
       "category": "Programming",
       "language": "English, Spanish, Italian, German",
       "reviews": 48000,
@@ -283,12 +283,12 @@
       "courses": 10,
       "syllabus": [
         {
-          "title": "Introduction to Python Programming",
+          "title": "Introduction to golang Programming",
           "lessons": 4,
           "duration": "1 hour"
         },
         {
-          "title": "Python Basics: Variables, Data Types, and Control Structures",
+          "title": "Golang Basics: Variables, Data Types, and Control Structures",
           "lessons": 6,
           "duration": "1.5 hours"
         },
@@ -298,12 +298,12 @@
           "duration": "1 hour"
         },
         {
-          "title": "Object-Oriented Programming in Python",
+          "title": "Object-Oriented Programming in golang",
           "lessons": 7,
           "duration": "2 hours"
         },
         {
-          "title": "Advanced Python Topics",
+          "title": "Advanced golang Topics",
           "lessons": 3,
           "duration": "1 hour"
         }

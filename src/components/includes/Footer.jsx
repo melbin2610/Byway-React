@@ -148,6 +148,7 @@ function Footer() {
   )
 }
 const Background = styled.div`
+  margin-top: 35px;
   background: #1e293b;
 `;
 
