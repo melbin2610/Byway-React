@@ -85,24 +85,61 @@ const Wrapper = styled.div`
   width: 65%;
   border-bottom: 1px solid #e2e8f0;
   padding: 30px 0;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px 0;
+  }
 `;
+
 
 const Title = styled.h4`
   font-size: 20px;
+  color: #0F172A;
   font-weight: 600;
+  line-height: 30px;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 `;
 
 const Name = styled.h4`
   font-size: 20px;
+  line-height: 30px;
   font-weight: 600;
   color: #2563eb;
   margin-bottom: 8px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+  
 `;
 
 const Profession = styled.h6`
   font-size: 16px;
   font-weight: 400;
+  line-height: 25.6px;
+  color: #334155;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const ProfileContainer = styled.div`
@@ -110,6 +147,9 @@ const ProfileContainer = styled.div`
   align-items: center;
   gap: 20px;
   margin: 20px 0;
+  @media (max-width: 480px) {
+    margin: 15px 0;
+  }
 `;
 
 const ProfilePic = styled.span`
@@ -118,6 +158,10 @@ const ProfilePic = styled.span`
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 const Image = styled.img`
@@ -145,6 +189,10 @@ const IconSpan = styled.span`
   display: inline-block;
   width: 22px;
   height: 22px;
+  @media (max-width: 480px) {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 const Icon = styled.img`
@@ -155,13 +203,31 @@ const Icon = styled.img`
 
 const Text = styled.span`
   font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
+  color: #0F172A;
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 const Paragraph = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
+  color: 25.6px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 22.6px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    line-height: 20px;
+  }
 `;
 
 export default Instructor

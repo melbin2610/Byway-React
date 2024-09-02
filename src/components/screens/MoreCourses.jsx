@@ -192,7 +192,8 @@ const ContentContainer = styled.div`
     width:258px;
     height:151px;
     gap:8px;`
-const ContentData = styled.div``
+const ContentData = styled.div`
+margin-top:2px;`
 const ContentHeading = styled.h5`
     font-size:18px;
     font-weight:600;
@@ -201,13 +202,14 @@ const ContentHeading = styled.h5`
 const ContentPara = styled.p`
     font-size:14px;
     font-weight:400;
-    line-height:21px;
+    line-height:30px;
     color:#334155;
 `  
 const UserRating = styled.div`
     display: flex;
     gap:8px;` 
 const ContentPrice = styled.h4`
+    margin-top: 8px;
      font-size:20px;
     font-weight:600;
     line-height:30px;
@@ -224,11 +226,22 @@ const UserRatings = styled.div`
 const TotalHours = styled.div`
     font-size:14px;
     font-weight:400;
+    margin-top: 6px;
     line-height:21px;
     color:#334155;`  
 const MainContainer = styled.div`
 display:flex;
-justify-content:space-between;`
+justify-content:space-between;
+@media (max-width: 1440px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1280px) {
+    gap:21px;
+  }
+  @media (max-width: 980px) {
+    justify-content: center;
+  }
+`
 const UserStar = styled.img`
     width:100%;
     display:block;`

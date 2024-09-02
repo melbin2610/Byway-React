@@ -30,24 +30,47 @@ const Wrapper = styled.div`
 `;
 const HomeContainer = styled.div`
     display: flex;
+    @media (max-width: 1200px) {
+       flex-direction: column-reverse;
+  }
     `
 const LeftContainer = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 45%;
     padding: 168.5px 0;
-    gap:24px;`
+    gap:24px;
+    @media (max-width: 1200px) {
+      max-width: 80%;
+      padding: 58.5px 0;
+  }
+  @media (max-width: 768px) {
+      max-width: 100%;
+      padding: 30px 0;
+  }
+  `
 const LeftHeading = styled.h1`
     color: #0F172A;
     font-size:40px;
     font-weight:700;
     line-height:48px;
+    @media (max-width: 768px) {
+      font-size:30px;
+      line-height:40px;
+  }
+  @media (max-width: 480px) {
+      font-size:23px;
+      line-height:30px;
+  }
     `;
 const LeftPara = styled.p`
     color:#334155;
     font-size:16px;
     font-weight:400;
     line-height:25.6px;
+    @media (max-width: 480px) {
+      font-size:14px;
+  }
     `;
 const LeftButton = styled.button`
      cursor: pointer;
@@ -56,13 +79,19 @@ const LeftButton = styled.button`
     padding:10px 24px 10px 24px;
     border: none;
     background-color:#3B82F6;
-    border-radius:8px;`
+    border-radius:8px;
+    @media (max-width: 480px) {
+      max-width: 184px;
+  }`
 const ButtonText = styled.span`
    
     color:#FFFFFF;
     font-size:14px;
     line-height:22.4px;
     font-weight:500;
+    @media (max-width: 480px) {
+      font-size:11px;
+  }
    `
 const RightContainer = styled.div`
     padding:40px 0;`
@@ -70,6 +99,22 @@ const RightContainer = styled.div`
 const RightContainerImg = styled.img`
     display:block;
     width:100%;
-    margin-left:50%;`  
+    margin-left:50%;
+      @media (max-width: 1280px) {
+        margin-left:21%;
+      }
+        @media (max-width: 1200px) {
+       flex-direction: column-reverse;
+       margin-left:20%;
+       width: 50%;       
+      }
+      @media (max-width: 768px) {
+        margin-left: 22%;
+        width: 47%;
+      }
+      @media (max-width: 360px) {
+        margin-left: 15%;
+        width: 65%;
+      }`  
 
 export default HomeOne

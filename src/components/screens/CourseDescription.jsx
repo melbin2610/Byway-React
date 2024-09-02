@@ -52,6 +52,15 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 25px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px 0;
+    gap: 15px;
+  }
 `;
 
 const TopSection = styled.div``;
@@ -61,14 +70,34 @@ const BottomSection = styled.div``;
 const Title = styled.h4`
   font-family: Inter;
   font-size: 20px;
+  line-height: 30px;
   font-weight: 600;
   margin-bottom: 15px;
+  color: #0F172A;
+  
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 const Paraghraph = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
+  color: #334155;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 22.6px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 `;
 
 export default CourseDescription

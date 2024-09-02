@@ -53,6 +53,13 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  @media (max-width: 320px) {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+    height: 100%;
+  }
 `;
 
 const LogoWrapper = styled.div``;

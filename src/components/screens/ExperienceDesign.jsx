@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import SmallStarRating from '../../components/screens/SmallStarRating';
-import { useParams } from 'react-router-dom';
-
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import SmallStarRating from "../../components/screens/SmallStarRating";
+import { useParams } from "react-router-dom";
 
 function ExperienceDesign() {
   const [courseDetails, setCourseDetails] = useState(null);
@@ -10,21 +9,19 @@ function ExperienceDesign() {
   useEffect(() => {
     // Replace with your API endpoint
     fetch(`/data.json`)
-      .then(response => response.json())
-      .then(data => {
-        const course = data.topCourses.find(course => course.id == courseId);
+      .then((response) => response.json())
+      .then((data) => {
+        const course = data.topCourses.find((course) => course.id == courseId);
         setCourseDetails(course);
-        console.log(data.topCourses[0].id,courseId)
+        console.log(data.topCourses[0].id, courseId);
       })
-      .catch(error => console.error('Error fetching course details:', error));
+      .catch((error) => console.error("Error fetching course details:", error));
   }, [courseId]);
 
   // Show loading indicator or error message while fetching
   if (!courseDetails) {
     return <div>Loading...</div>;
   }
-
-  
 
   return (
     <Bg>
@@ -35,7 +32,10 @@ function ExperienceDesign() {
               <Navlink to="/">Home</Navlink>
               <Arrow>
                 <Icon
-                  src={require("../../assets/svg/short-arrow-right-black.svg").default}
+                  src={
+                    require("../../assets/svg/short-arrow-right-black.svg")
+                      .default
+                  }
                   alt="arrow-right"
                 />
               </Arrow>
@@ -44,7 +44,10 @@ function ExperienceDesign() {
               <Navlink to="/">{courseDetails.category}</Navlink>
               <Arrow>
                 <Icon
-                  src={require("../../assets/svg/short-arrow-right-black.svg").default}
+                  src={
+                    require("../../assets/svg/short-arrow-right-black.svg")
+                      .default
+                  }
                   alt="arrow-right"
                 />
               </Arrow>
@@ -67,7 +70,10 @@ function ExperienceDesign() {
           </InfoWrapper>
           <FounderWrapper>
             <Founder>
-              <FounderPic src={courseDetails.instructorImage} alt="Founder Pic" />
+              <FounderPic
+                src={courseDetails.instructorImage}
+                alt="Founder Pic"
+              />
             </Founder>
             <SmallText>
               Created by{" "}
@@ -183,10 +189,36 @@ const Container = styled.div`
   max-width: 1280px;
   padding: 40px 0 30px;
   position: relative;
+  @media (max-width: 980px) {
+    display: flex;
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 0 30px;
+  }
 `;
 
 const NavContainer = styled.div`
   margin-bottom: 50px;
+  @media (max-width: 980px) {
+    flex-basis: 100%;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 320px) {
+    display: none;
+  }
 `;
 
 const Ul = styled.ul`
@@ -194,19 +226,28 @@ const Ul = styled.ul`
   display: inline-flex;
   align-items: center;
   gap: 25px;
+  
+  @media (max-width: 480px) {
+    gap: 15px;
+  }
 `;
 
 const List = styled.li`
-display:flex;
-align-items:center`;
+  display: flex;
+  align-items: center;
+`;
 
 const Navlink = styled.div`
   text-decoration: none;
   font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   color: #334155;
   &:last-child {
     color: #2563eb;
+  }
+  @media (max-width: 480px) {
+    font-size: 12px;
   }
 `;
 
@@ -214,6 +255,7 @@ const Arrow = styled.span`
   display: inline-block;
   width: 6px;
   margin-left: 20px;
+  color: #0F172A;
 `;
 
 const Icon = styled.img`
@@ -223,11 +265,27 @@ const Icon = styled.img`
 
 const Contents = styled.div`
   width: 60%;
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Heading = styled.h1`
   font-size: 40px;
+  line-height: 56px;
+  color: #0F172A;
   font-weight: 700;
+  letter-spacing: -0.32px;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -236,12 +294,33 @@ const Paragraph = styled.p`
   font-weight: 400;
   line-height: 25.6px;
   margin: 20px 0;
+  color: #334155;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 22.6px;
+    margin: 15px 0;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 10px 0;
+  }
 `;
 
 const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
   margin: 20px 0;
+  @media (max-width: 480px) {
+    margin: 15px 0;
+  }
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 `;
 
 const Rating = styled.span`
@@ -249,6 +328,10 @@ const Rating = styled.span`
   font-weight: 500;
   color: #fec84b;
   margin-right: 8px;
+  @media (max-width: 480px) {
+    margin-right: 4px;
+    font-size: 14px;
+  }
 `;
 
 const Star = styled.span`
@@ -257,15 +340,42 @@ const Star = styled.span`
 
 const RatingCounts = styled.span`
   font-size: 14px;
-  font-weight: 300;
+  color: #334155;
+  font-weight: 400;
   margin-right: 10px;
+  line-height: 21px;
+  
+  @media (max-width: 768px) {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    margin-right: 10px;
+    font-size: 11px;
+  }
 `;
 
 const Duration = styled.span`
   border-left: 1px solid #000;
   padding-left: 10px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 21px;
+  @media (max-width: 768px) {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    margin-right: 0;
+    font-size: 11px;
+  }
+
+  @media (max-width: 320px) {
+    border: none;
+    padding: 0;
+  }
 `;
 
 const FounderWrapper = styled.div`
@@ -289,8 +399,11 @@ const FounderPic = styled.img`
 `;
 
 const SmallText = styled.p`
+  line-height: 21px;
   font-size: 14px;
   font-weight: 400;
+  color: #334155;
+  
 `;
 
 const LanguageWrapper = styled.div`
@@ -298,6 +411,13 @@ const LanguageWrapper = styled.div`
   align-items: center;
   gap: 10px;
   margin-top: 20px;
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
+
+  @media (max-width: 480px) {
+    margin: 15px 0;
+  }
 `;
 
 const LanguageIcon = styled.span`
@@ -308,8 +428,9 @@ const LanguageIcon = styled.span`
 
 const Languages = styled.span`
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 21px;
+  color: #334155;
   text-align: left;
 `;
 
@@ -321,6 +442,13 @@ const PurchaseDetailsBox = styled.div`
   position: absolute;
   right: 0;
   top: 25px;
+  @media (max-width: 980px) {
+    position: static;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const TopSection = styled.div`
@@ -330,6 +458,17 @@ const TopSection = styled.div`
   padding: 23px;
   border-bottom: 1.5px solid #e2e8f0;
   z-index: 1;
+  
+  @media (max-width: 768px) {
+    /* flex-direction: row; */
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    /* flex-direction: column; */
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -337,6 +476,17 @@ const ImageWrapper = styled.div`
   height: 200px;
   border-radius: 8px;
   overflow: hidden;
+  @media (max-width: 980px) {
+    height: 167px;
+  }
+
+  @media (max-width: 600px) {
+    height: 134px;
+  }
+
+  @media (max-width: 480px) {
+    height: 167px;
+  }
 `;
 
 const Image = styled.img`
@@ -351,6 +501,13 @@ const PriceSection = styled.div`
   align-items: center;
   gap: 15px;
   margin: 25px 0;
+  @media (max-width: 768px) {
+    margin: 0 0 25px;
+  }
+
+  @media (max-width: 600px) {
+    margin: 0 0 15px;
+  }
 `;
 
 const SpecialPrice = styled.h3`
@@ -382,6 +539,10 @@ const CartButton = styled.button`
   border: none;
   margin-bottom: 25px;
   cursor: pointer;
+  @media (max-width: 600px) {
+    height: 40px;
+    margin-bottom: 10px;
+  }
 `;
 
 const BuyButton = styled.button`
@@ -395,15 +556,24 @@ const BuyButton = styled.button`
   color: #020617;
   text-align: center;
   box-sizing: border-box;
+  @media (max-width: 600px) {
+    height: 40px;
+  }
 `;
 
 const MediaSection = styled.div`
   padding: 20px;
+  @media (max-width: 768px) {
+    padding: 20px 20px;
+  }
 `;
 
 const SubTitle = styled.h4`
   font-size: 16px;
   font-weight: 500;
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const MeadiaIcons = styled.ul`
@@ -411,18 +581,32 @@ const MeadiaIcons = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 35px;
+  @media (max-width: 320px) {
+    gap: 0;
+    justify-content: space-between;
+  }
 `;
 
 const IconList = styled.li``;
 
 const IconLink = styled.a`
   display: inline-block;
-  width: 25px;
-  height: 25px;
-  padding: 3%;
+  width: 30px;
+  height: 30px;
+  padding: 6%;
   border-radius: 50%;
   border: 4px solid rgba(226, 232, 240, 0.5);
+  @media (max-width: 480px) {
+    border: 3px solid rgba(226, 232, 240, 0.5);
+  }
+
+  @media (max-width: 320px) {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border: 2px solid rgba(226, 232, 240, 0.5);
+  }
 `;
 
 export default ExperienceDesign;

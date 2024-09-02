@@ -2,6 +2,7 @@ import StarRating from "./StarRating";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
+import StarPyramid from "./StarPyramid";
 
 
 function LearnerReviews() {
@@ -43,12 +44,11 @@ function LearnerReviews() {
                 {courseDetails.leanersTotalReviews} reviews
               </ReviewsText>
             </Topline>
-            <StarPyramid>
-              <Starts>
-                <StarRating />
-              </Starts>
-              <StarText></StarText>
-            </StarPyramid>
+     
+       
+              <StarPyramid />
+         
+          
           </LeftWrapper>
           <RightSection>
             {courseDetails.leanerReviews.map((item) => (
@@ -85,29 +85,63 @@ function LearnerReviews() {
   )
 }
 const Container = styled.div`
-  // width: 90%;
-  // margin: 0 auto;
-  // max-width: 1280px;
-  padding: 30px 0 15px;
+   padding: 30px 0 15px;
+   
+  @media (max-width: 480px) {
+    padding: 15px 0;
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  
+  @media (max-width: 768px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const Title = styled.h4`
   margin-bottom: 30px;
   font-size: 20px;
+  line-height: 30px;
   font-weight: 600;
+  color:#0F172A;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 `;
 
-const LeftWrapper = styled.div``;
+const LeftWrapper = styled.div`
+@media (max-width: 768px) {
+    width: 35%;
+  }
+
+  @media (max-width: 600px) {
+    width: 50%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }`;
 
 const Topline = styled.div`
   display: flex;
   gap: 5px;
   margin-bottom: 20px;
+  
+  @media (max-width: 480px) {
+    align-items: center;
+  }
 `;
 
 const StarIcon = styled.span`
@@ -119,16 +153,30 @@ const StarIcon = styled.span`
 const SpanText = styled.span`
   font-size: 20px;
   font-weight: 600;
+  line-height: 28px;
+  color: #0F172A;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 const ReviewsText = styled.span`
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 20px;
   align-self: flex-end;
   margin-left: 5px;
+  color: #334155;
+  @media (max-width: 480px) {
+    align-self: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 
-const StarPyramid = styled.div``;
+
 
 const Starts = styled.div``;
 
@@ -137,6 +185,9 @@ const StarIcons = styled.span``;
 const StarText = styled.h5`
   font-size: 18px;
   font-weight: 600;
+  line-height: 28.8px;
+  color: #0F172A;
+ 
 `;
 
 const RightSection = styled.div`
@@ -144,6 +195,10 @@ const RightSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const RightWrapper = styled.div`
@@ -152,6 +207,10 @@ const RightWrapper = styled.div`
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 980px) {
+    flex-direction: column;
+    padding: 20px;
+  }
 `;
 
 const UserProfile = styled.div`
@@ -160,6 +219,9 @@ const UserProfile = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
+  @media (max-width: 980px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const ProfilePic = styled.span`
@@ -180,6 +242,11 @@ const Image = styled.img`
 const Name = styled.h5`
   font-size: 18px;
   font-weight: 600;
+  line-height: 28.8px;
+  color: #0F172A;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 const Contents = styled.div``;
@@ -188,18 +255,31 @@ const Top = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  @media (max-width: 980px) {
+    margin-bottom: 8px;
+  }
 `;
 
 const Date = styled.p`
   margin-left: 30px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 21px;
+  color: #334155;
 `;
 
 const Paragraph = styled.p`
   font-size: 16px;
+  color: #334155  ;
   font-weight: 400;
   line-height: 25.6px;
+  @media (max-width: 980px) {
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    font-size: 13px;
+    line-height: 22.6px;
+  }
 `;
 
 const Icon = styled.img`
@@ -219,5 +299,13 @@ const Button = styled.button`
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
+  line-height: 22.4px;
+  color: #0F172A;
+  @media (max-width: 480px) {
+    margin: 0 auto;
+    width: 150px;
+    font-size: 13px;
+    padding: 8px 16px 8px 16px;
+  }
 `;
 export default LearnerReviews

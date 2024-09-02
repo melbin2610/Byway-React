@@ -138,6 +138,22 @@ const Paragraph = styled.p`
 const ItemsMainContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1440px) {
+       flex-wrap: wrap;
+  }
+  @media (max-width: 1280px) {
+       gap:30px;
+  }
+  @media (max-width: 980px) {
+       justify-content: center;
+  }
+  @media (max-width: 680px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ 
 `;
 
 export default TopCategories;

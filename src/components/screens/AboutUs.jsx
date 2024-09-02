@@ -18,11 +18,27 @@ function AboutUs() {
   }, []);
 
   const settings1 = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1080,  // Breakpoint at 1080px
+        settings: {
+          slidesToShow: 2,  // Show 2 slides
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,  // Optional: Breakpoint for mobile devices
+        settings: {
+          slidesToShow: 1,  // Show 1 slide
+          slidesToScroll: 1,
+        }
+      }
+    ],
   };
 
   return (
@@ -86,12 +102,20 @@ const Background = styled.div`
   margin-top: 62px;
   padding: 70px 0 60px;
   background: #f8fafc;
+  @media (max-width: 480px) {
+    width: 97%;
+  }
 `;
+
 
 const Container = styled.div`
   width: 90%;
   margin: 0 auto;
   max-width: 1280px;
+  @media (max-width: 1440px) {
+       flex-wrap: wrap;
+  }
+  
 `;
 
 const HeadingWrapper = styled.div`
@@ -99,6 +123,9 @@ const HeadingWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const Heading = styled.h3`
@@ -109,12 +136,21 @@ const Heading = styled.h3`
   font-weight: 600;
   line-height: 33.6px;
   text-align: left;
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+  @media (max-width: 320px) {
+    margin-left: 11px;
+  }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+  @media (max-width: 480px) {
+   gap: 12px;
+  }
 `;
 
 const PrevButton = styled.button`
@@ -125,6 +161,10 @@ const PrevButton = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 33px;
+  }
 `;
 
 const NextButton = styled.button`
@@ -135,6 +175,10 @@ const NextButton = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 33px;
+  }
 `;
 
 const ButtonIcon = styled.img``;
@@ -147,6 +191,10 @@ const Card = styled.div`
   border-radius: 16px;
   border: 1px solid #e2e8f0;
   box-shadow: 0px 0px 8px 0px #3b82f61f;
+  @media (max-width: 1440px) {
+       flex-wrap: wrap;
+  }
+  
  
 `;
 
@@ -155,12 +203,18 @@ const QuoteIcon = styled.span``;
 const Icon = styled.img``;
 
 const Paragraph = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
   text-align: left;
   color: #000000;
   margin: 10px 0 8px;
+  @media (max-width: 1080px) {
+    font-size: 13px;
+  }
+  @media (max-width: 480px) {
+    font-size: 11px;
+  }
 `;
 
 const UserWrapper = styled.div`
@@ -196,6 +250,12 @@ const Name = styled.h5`
   line-height: 28.8px;
   text-align: left;
   color: #000000;
+  @media (max-width: 1080px) {
+    font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    font-size: 11px;
+  }
 `;
 
 const Profession = styled.p`
@@ -203,10 +263,15 @@ const Profession = styled.p`
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  color: #334155;
+  @media (max-width: 1080px) {
+    font-size: 12px;
+    @media (max-width: 480px) {
+    font-size: 9px;
+  }
+  }
 `;
-const MainCard = styled.div`
- 
-`
+
 
 
 export default AboutUs;

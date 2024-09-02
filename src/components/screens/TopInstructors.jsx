@@ -143,6 +143,13 @@ const SeeMore = styled.span`
 const MainCard = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1440px) {
+       flex-wrap: wrap;
+  }
+  @media (max-width: 680px) {
+    gap: 29px;
+    justify-content: center;
+  }
 `
 const DataCard = styled.div`
   width: 212px;

@@ -80,6 +80,10 @@ const Widgets = styled.div`
   display: flex;
   flex-wrap: wrap; /* Added to handle overflow */
   gap: 16px; /* Added to manage spacing */
+  @media (max-width: 980px) {
+   display: flex;
+   justify-content: center;
+  }
 `;
 
 const Card = styled(Link)`
@@ -107,7 +111,7 @@ const Image = styled.img`
   object-fit: cover; /* Ensures image fits well */
 `;
 
-const Subheading = styled.h4`
+const Subheading = styled.h5`
   font-family: Inter, sans-serif; /* Added fallback font */
   font-size: 18px;
   font-weight: 600;
