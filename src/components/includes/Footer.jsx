@@ -239,9 +239,9 @@ const Paragraph = styled.p`
     font-size: 13px;
   }
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     font-size: 12px;
-  }
+  } */
 `;
 
 const Items2 = styled.div``;
@@ -278,7 +278,7 @@ const TextLink = styled(Link)`
   }
 
   @media (max-width: 480px) {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
   }
 

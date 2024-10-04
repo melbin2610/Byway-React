@@ -159,7 +159,7 @@ const Info = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 

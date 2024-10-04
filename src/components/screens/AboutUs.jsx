@@ -212,9 +212,7 @@ const Paragraph = styled.p`
   @media (max-width: 1080px) {
     font-size: 13px;
   }
-  @media (max-width: 480px) {
-    font-size: 11px;
-  }
+  
 `;
 
 const UserWrapper = styled.div`
@@ -254,7 +252,7 @@ const Name = styled.h5`
     font-size: 14px;
   }
   @media (max-width: 480px) {
-    font-size: 11px;
+    font-size: 13px;
   }
 `;
 
@@ -266,9 +264,7 @@ const Profession = styled.p`
   color: #334155;
   @media (max-width: 1080px) {
     font-size: 12px;
-    @media (max-width: 480px) {
-    font-size: 9px;
-  }
+
   }
 `;
 

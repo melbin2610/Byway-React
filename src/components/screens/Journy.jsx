@@ -99,7 +99,7 @@ const LeftImage = styled.div`
 `;
 
 const RightContent = styled.div`
-  width: 549px;
+  width: 45%;
 
   @media (max-width: 980px) {
     width: 50%;
@@ -139,7 +139,7 @@ const Paragraph = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 
@@ -158,17 +158,12 @@ const LinkButton = styled(Link)`
   text-align: left;
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 13px;
     padding: 12px 16px 12px 16px;
 
     .icon-container {
       width: 15px;
     }
-  }
-
-  @media (max-width: 480px) {
-    font-size: 11px;
-    padding: 10px 16px 10px 16px;
   }
 `;
 
@@ -197,7 +192,7 @@ const BottomSection = styled.div`
 `;
 
 const LeftContent = styled.div`
-  width: 511px;
+  width: 41%;
 
   @media (max-width: 980px) {
     width: 50%;

@@ -88,6 +88,7 @@ const Title = styled.h4`
 `;
 
 const Table = styled.div`
+ cursor: pointer;
   width: 95%;
   @media (max-width: 768px) {
     width: 100%;
@@ -127,6 +128,7 @@ const FirstColomn = styled.div`
 `;
 
 const IconSpan = styled.span`
+ 
   @media (max-width: 480px) {
     width: 11px;
   }

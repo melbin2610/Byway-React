@@ -90,7 +90,7 @@ const ButtonText = styled.span`
     line-height:22.4px;
     font-weight:500;
     @media (max-width: 480px) {
-      font-size:11px;
+      font-size:13px;
   }
    `
 const RightContainer = styled.div`

@@ -66,6 +66,7 @@ const Heading = styled.h3`
 `;
 
 const SeeAllButton = styled.button`
+  cursor: pointer;
   background: transparent;
   border: none;
   font-family: Inter, sans-serif; /* Added fallback font */
