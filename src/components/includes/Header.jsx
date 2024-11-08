@@ -33,10 +33,12 @@ function Header() {
 }
 
 const HeaderContainer= styled.div`
+    font-family: inter;
     border-bottom: 1px solid #E2E8F0;
     padding : 14px 0px;
     height:65px;
     background-color:#FFFFFF
+    
     ;`
 const Wrapper= styled.div`
     width: 90%;

@@ -28,3 +28,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter-Regular.woff2') format('woff2'),
+      url('../public/fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.Inter{
+  font-family:"inter" ;
+ } 
+
+

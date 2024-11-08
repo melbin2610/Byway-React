@@ -99,6 +99,7 @@ function AboutUs() {
 }
 
 const Background = styled.div`
+  font-family: inter;
   margin-top: 62px;
   padding: 70px 0 60px;
   background: #f8fafc;

@@ -41,7 +41,7 @@ function CourseDescription() {
   )
 }
 const Container = styled.div`
-
+   font-family: inter;
 `;
 
 const TextWrapper = styled.div`

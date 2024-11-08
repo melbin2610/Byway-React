@@ -53,6 +53,7 @@ function Journy() {
   )
 }
 const Container = styled.div`
+  font-family: inter;
   width: 90%;
   margin: 0 auto;
   max-width: 1280px;

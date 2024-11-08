@@ -84,6 +84,30 @@ function TopInstructors() {
             </DataContents>
           </DataCardItems>
         </DataCard>
+        
+        <DataCard>
+          <DataCardItems>
+            <ImgContainer>
+              <DataImg src={instructor} alt="instructor"/>
+            </ImgContainer>
+            <DataContents>
+               <DataContentItems>
+               <DataHeading>Ronald Richards</DataHeading>
+               <DataParagraph>UI/UX Designer</DataParagraph>
+               <HorizontalLine></HorizontalLine>
+               <StudentRating>
+                <UserRating>
+                  <StarContainer>
+                  <Star src={star} alt="star"/>
+                  </StarContainer>
+                  <Rating>4.9</Rating>
+                </UserRating>
+                <NoStudents>2400 Students</NoStudents>
+               </StudentRating>
+               </DataContentItems>
+            </DataContents>
+          </DataCardItems>
+        </DataCard>
 
         <DataCard>
           <DataCardItems>
@@ -119,6 +143,7 @@ const Wrapper = styled.div`
   margin-inline: auto;
 `;
 const InstructorsContainer = styled.div`
+  font-family: inter;
   margin-top: 64px;
   display: flex;
   flex-direction: column;

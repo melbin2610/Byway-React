@@ -29,6 +29,7 @@ const Wrapper = styled.div`
   margin-inline:  auto;
 `;
 const HomeContainer = styled.div`
+    font-family: inter;
     display: flex;
     @media (max-width: 1200px) {
        flex-direction: column-reverse;
@@ -84,7 +85,7 @@ const LeftButton = styled.button`
       max-width: 184px;
   }`
 const ButtonText = styled.span`
-   
+    font-family: inter;
     color:#FFFFFF;
     font-size:14px;
     line-height:22.4px;

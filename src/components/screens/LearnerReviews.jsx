@@ -85,6 +85,7 @@ function LearnerReviews() {
   )
 }
 const Container = styled.div`
+   font-family: inter;
    padding: 30px 0 15px;
    
   @media (max-width: 480px) {
@@ -289,6 +290,7 @@ const Icon = styled.img`
 `;
 
 const Button = styled.button`
+  font-family: inter;
   display: block;
   background: transparent;
   width: 179px;

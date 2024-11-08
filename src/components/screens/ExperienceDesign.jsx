@@ -179,6 +179,7 @@ function ExperienceDesign() {
 }
 
 const Bg = styled.div`
+  font-family: inter;
   background: #f8fafc;
 `;
 
@@ -528,6 +529,7 @@ const Offer = styled.h4`
 `;
 
 const CartButton = styled.button`
+  font-family: inter;
   width: 100%;
   height: 48px;
   background: #020617;
@@ -546,6 +548,7 @@ const CartButton = styled.button`
 `;
 
 const BuyButton = styled.button`
+  font-family: inter;
   cursor: pointer;
   width: 100%;
   height: 48px;

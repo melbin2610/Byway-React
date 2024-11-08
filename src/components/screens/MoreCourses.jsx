@@ -133,17 +133,21 @@ function TopCourses() {
   )
 }
 const Wrapper = styled.div`
+  
   width: 90%;
   max-width: 1280px;
   margin-inline: auto;
 `;
 const CategoriesContainer = styled.div`
+   
+  font-family: inter;
   margin-top: 64px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 `;
 const HeaderContent = styled.div`
+  
   gap: 24px;
   display: flex;
   justify-content: space-between;
@@ -230,6 +234,7 @@ const TotalHours = styled.div`
     line-height:21px;
     color:#334155;`  
 const MainContainer = styled.div`
+margin-bottom: 20px;
 display:flex;
 justify-content:space-between;
 @media (max-width: 1440px) {

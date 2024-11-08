@@ -32,6 +32,7 @@ function Status() {
   );
 }
 const StatusContainer = styled.div`
+  font-family: inter;
   background: #f8fafc;
 `;
 
@@ -47,6 +48,7 @@ const Wrapper = styled.div`
 `;
 
 const Items = styled.div`
+  font-family: inter;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +65,7 @@ const Items = styled.div`
 `;
 
 const Item = styled.div`
+  font-family: inter;
   text-align: center;
   position: relative;
 
@@ -128,6 +131,7 @@ const Item = styled.div`
 `;
 
 const Number = styled.h3`
+  font-family: inter;
   margin-bottom: 8px;
   color: #0f172a;
   font-family: Inter;
@@ -148,6 +152,7 @@ const Number = styled.h3`
 `;
 
 const Info = styled.p`
+  
   color: #0f172a;
   font-family: Inter;
   font-size: 14px;

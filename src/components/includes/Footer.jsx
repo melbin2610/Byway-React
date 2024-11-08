@@ -150,7 +150,8 @@ function Footer() {
 }
 
 const Background = styled.div`
-  margin-top: 60px;
+  font-family: inter;
+  margin-top: 20px;
   background: #1e293b;
 `;
 
@@ -309,11 +310,11 @@ const Icon = styled.li``;
 
 const MediaLinks = styled.a`
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background: #fff;
   border-radius: 50%;
-  padding: 8px;
+  padding: 6px;
 `;
 
 const Image = styled.img`

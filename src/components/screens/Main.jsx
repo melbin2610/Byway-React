@@ -79,6 +79,7 @@ function Main() {
 }
 
 const Container = styled.div`
+  font-family: inter;
   width: 90%;
   margin: 0 auto;
   max-width: 1280px;
@@ -107,6 +108,7 @@ const Box = styled.li`
   }`;
 
 const Button = styled.button`
+  font-family: inter;
   width: 148px;
   height: 57px;
   background-color: transparent;

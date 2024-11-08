@@ -69,6 +69,7 @@ const Wrapper = styled.div`
   margin-inline: auto;
 `;
 const CategoriesContainer = styled.div`
+  font-family: inter;
   margin-top: 64px;
   display: flex;
   flex-direction: column;
@@ -96,7 +97,7 @@ const ItemsContainer = styled.div``;
 const CategorieCard = styled.div`
   display: flex;
   flex-direction: column;
-  width: 286px;
+  width: 300px;
   height: 224px;
   padding: 24px 93px 24px 93px;
   border: 1px solid #e2e8f0;
@@ -137,7 +138,7 @@ const Paragraph = styled.p`
 `;
 const ItemsMainContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   @media (max-width: 1440px) {
        flex-wrap: wrap;
   }

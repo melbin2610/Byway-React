@@ -43,6 +43,7 @@ function TopCourses() {
 }
 
 const CourseContainer = styled.div`
+   font-family: inter;
    width: 90%;
     max-width: 1280px;
     margin-inline: auto;
@@ -79,8 +80,9 @@ const SeeAllButton = styled.button`
 
 const Widgets = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap; /* Added to handle overflow */
-  gap: 16px; /* Added to manage spacing */
+   /* Added to manage spacing */
   @media (max-width: 980px) {
    display: flex;
    justify-content: center;
